@@ -1,0 +1,36 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Manrope:wght@400&display=swap');
+
+/*----------  base
+------------------------------------------------------------------------------*/
+@import "base/reset";
+@import "base/variables";
+@import "base/typography"; 
+
+/*----------  components
+------------------------------------------------------------------------------*/
+// @import "components/buttons";
+// @import "components/dropdown";
+// @import "components/navigation";
+/*----------  libs
+------------------------------------------------------------------------------*/
+
+/*----------  layout
+------------------------------------------------------------------------------*/
+@import "layout/header"; 
+@import "layout/footer";     
+  
+ 
+* {
+    box-sizing: border-box;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0,0);
+    border: 0;
+}

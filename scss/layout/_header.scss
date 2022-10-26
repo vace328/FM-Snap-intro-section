@@ -1,0 +1,52 @@
+header {
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+}
+nav {
+    border: 1px solid blue;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.navigation-wrapper {
+    width: 100%;
+    border: 1px solid pink;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+ul {
+    border: 1px solid yellow;
+}
+// .log-reg {
+//     margin-left: auto;
+// }
+
+
+
+.burger-btn {
+    padding: 10px;
+    // margin-left: auto;
+}
+.burger-btn span,
+.burger-btn span::before,
+.burger-btn span::after {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+}
+.burger-btn span::before,
+.burger-btn span::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    z-index: 10;
+}
+.burger-btn span::after {
+    bottom: -8px;
+}
