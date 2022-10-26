@@ -17,13 +17,26 @@
     </div>
     <nav>
       <div class="navigation-wrapper">
-        <div class="burger-btn">
+        <div id="burger-btn" class="burger-btn">
           <span></span>
         </div>
-        <div class="nav-items-wrapper hidden">
+        <div id="nav-items-wrapper" class="nav-items-wrapper hidden">
           <ul>
-            <li>Features</li>
-            <li>Company</li>
+            <li class="has-dropdown">Features
+              <ul class="dropdown hidden">
+                <li>Todo List</li>
+                <li>Calendar</li>
+                <li>Reminders</li>
+                <li>Planning</li>
+              </ul>
+            </li>
+            <li class="has-dropdown">Company
+              <ul class="dropdown hidden">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
             <li>Careers</li>
             <li>About</li>
           </ul>
@@ -44,5 +57,6 @@
   <footer>
     footer
   </footer>  
+  <script src="app.js"></script>
  </body>
 </html>

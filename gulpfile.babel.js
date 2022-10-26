@@ -24,9 +24,9 @@ const paths = {
   },  
   scrips: {
     src: [
-     "src/js/custom.js"
+     "app.js"
     ],
-    dest: "assets/js"
+    dest: "js"
   },
   other: {
     src: [
@@ -120,6 +120,7 @@ export const scripts = () => {
 
 export const dev = gulp.series(
   styles,
+  // scripts,
   serve,
   watch
 );
