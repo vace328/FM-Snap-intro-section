@@ -16,14 +16,26 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
-    // position: absolute;
-    // width: 100vw;
-    // min-height: 100vh;
-    // right: 0;
-    // top: 0;
+    width: auto;
+    height: auto;
+    transition: all 1s ease-in-out;
+    
 }
 
+.mobile-menu-open {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.nav-items-wrapper {
+    width: 50%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
 
 ul {
     border: 1px solid yellow;
@@ -31,6 +43,9 @@ ul {
 ul:first-of-type li:first-of-type{
     background-color: bisque;
 }
+
+
+
 // .log-reg {
 //     margin-left: auto;
 // }
@@ -49,6 +64,8 @@ ul:first-of-type li:first-of-type{
     height: 3px;
     background-color: black;
     position: relative;
+    
+    transition: top 0.2s ease-in-out, bottom 0.2s ease-in-out, transform 0.2s ease-in-out, background-color 0.001s ease-in-out;
 }
 .burger-btn span::before,
 .burger-btn span::after {
@@ -56,7 +73,20 @@ ul:first-of-type li:first-of-type{
     position: absolute;
     bottom: 8px;
     z-index: 10;
+    // background-color: violet;
 }
 .burger-btn span::after {
     bottom: -8px;
+}
+.burger-btn span.x {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.burger-btn span.x::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+.burger-btn span.x::after {
+    transform: rotate(-45deg);
+    bottom: 0;
 }
