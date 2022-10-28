@@ -21,6 +21,10 @@ body {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     display: block;
     background-color: red;
@@ -80,12 +84,14 @@ header {
  }
 
 /*#region  Burger */
+
 .burger-bg {
     // background-color: aqua;  
     display: block; 
     padding: 10px; 
     position: relative;
     z-index: 11;
+    cursor: pointer;
 }
 .burger-btn span,
 .burger-btn span::before,
@@ -122,3 +128,39 @@ header {
     bottom: 0;
 }
 /*#endregion*/
+
+
+@media only screen and (min-width: 800px) {
+    .burger-bg {
+        display: none;
+    }
+    .nav-inner-wrapper {
+        position: static;
+        margin-left: unset;
+    }
+    .nav-items-wrapper {           
+        position: static;
+        top: unset;
+        right: unset;
+        width: unset;
+        min-height: unset;
+        padding-top: 0px;
+        z-index: 9;
+        transition: unset;
+        display: flex;
+        flex-direction: row;
+        ul li:not(.dropdown li){
+            display: inline-block;
+            cursor: pointer;
+        }
+        .has-dropdown {
+            position: relative;
+        }
+        .dropdown {
+            position: absolute;
+        }
+    }
+    .log-reg {
+       margin-left: auto;
+    }
+}
