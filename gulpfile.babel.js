@@ -18,15 +18,16 @@ const sass = gulpSass(dartSass);
 const paths = {  
   styles: {
     src: [
-        "scss/style.scss"
+        "scss/style.scss",
+        "scss/test.scss"
     ],
     dest: "css"
   },  
   scrips: {
     src: [
-     "src/js/custom.js"
+     "app.js"
     ],
-    dest: "assets/js"
+    dest: "js"
   },
   other: {
     src: [
@@ -120,6 +121,7 @@ export const scripts = () => {
 
 export const dev = gulp.series(
   styles,
+  // scripts,
   serve,
   watch
 );
