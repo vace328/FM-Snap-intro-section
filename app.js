@@ -36,6 +36,11 @@ Array.from(hasSubmenu).forEach((submenuWrapper) => {
     //   console.log(e.target.children[0]);
     //   e.target.children[0].classList.add("hidden");
     // }
+    if (!mobileScreenMenu && (hasSubmenu || hasSubmenu != null)) {
+      Array.from(hasSubmenu).forEach((submenuWrapper) => {
+        submenuWrapper.children[0].classList.add("hidden");
+      });
+    }
 
     if (e.target.children.length > 0) {
       console.log(e.target.children.length > 0);
