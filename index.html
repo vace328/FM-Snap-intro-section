@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
@@ -11,54 +12,80 @@
 </head>
 <body>
   <header>
-    <div>
-        logo
+    <h1 class="sr-only">Snap - introductory section</h1>
+    <div class="img-wrapper img-wrapper--logo">
+      <img src="./images/logo.svg" alt="Snap logo">
     </div>
     <nav id="nav">
-        <div class="nav-inner-wrapper">
-            <div id="burger-btn" class="nav-section burger-bg">
-                <div  class="burger-btn">
-                    <span></span>
-                </div>
-            </div>
-            <div id="nav-items-wrapper" class="nav-section nav-items-wrapper">
-                <ul>
-                    <li class="has-dropdown">Features
-                        <ul class="dropdown hidden">
-                            <li>Todo List</li>
-                            <li>Calendar</li>
-                            <li>Reminders</li>
-                            <li>Planning</li>
-                        </ul>
-                    </li>
-                    <li class="has-dropdown">Company
-                        <ul class="dropdown hidden">
-                            <li>History</li>
-                            <li>Our Team</li>
-                            <li>Blog</li>
-                        </ul>
-                    </li>
-                    <li>Careers</li>
-                    <li>About</li>
-                </ul>
-                <ul class="log-reg">
-                    <li>Login</li>
-                    <li>Register</li>
-                </ul>
-            </div>
-            </div>
+      <div class="nav-inner-wrapper">
+        <div id="burger-btn" class="nav-section burger-bg">
+          <div class="burger-btn">
+            <span></span>
+          </div>
         </div>
+        <div id="nav-items-wrapper" class="nav-section nav-items-wrapper">
+          <ul>
+            <li class="has-dropdown">Features
+              <span class="submenu-arrow"> 
+                
+                <img src="images/icon-arrow-down.svg" alt="arow icon">
+              </span>
+              <ul class="dropdown hidden">
+                <li>
+                  <span class="submenu-item-icon">
+                    <img src="images/icon-todo.svg" alt="">
+                  </span>
+                  <a href="#">Todo List</a>
+                </li>
+                <li>
+                  <span class="submenu-item-icon">
+                    <img src="images/icon-calendar.svg" alt="">
+                  </span>
+                  <a href="#">Calendar</a>
+                </li>
+                <li>
+                  <span class="submenu-item-icon">
+                    <img src="images/icon-reminders.svg" alt="">
+                  </span>
+                  <a href="##">Reminders</a>
+                </li>
+                <li>
+                  <span class="submenu-item-icon">
+                    <img src="images/icon-planning.svg" alt="">
+                  </span>
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-dropdown">Company
+              <span class="submenu-arrow"> <img src="images/icon-arrow-down.svg" alt="arow icon"></span>
+              <ul class="dropdown dropdown-2 hidden">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+          <ul class="log-reg">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
     </nav>
-</header>
+  </header>
   <main>
     <h2> Make remote work</h2>
-    <p>Get your team in sync, no matter your location. Streamline processes, 
+    <p>Get your team in sync, no matter your location. Streamline processes,
       create team rituals, and watch productivity soar.</p>
-      <button>Learn more</button>    
+    <button>Learn more</button>
   </main>
   <footer>
     footer
-  </footer>  
+  </footer>
   <script src="app.js"></script>
- </body>
+</body>
 </html>

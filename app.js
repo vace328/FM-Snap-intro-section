@@ -20,11 +20,17 @@ burger.addEventListener("click", (e) => {
 });
 
 Array.from(hasSubmenu).forEach((submenuWrapper) => {
-  if (hasSubmenu || hasSubmenu != null) {
-    Array.from(hasSubmenu).forEach((submenuWrapper) => {
-      submenuWrapper.children[0].classList.add("hidden");
-    });
-  }
+      submenuWrapper.children[1].classList.add("hidden");
+      console.log(submenuWrapper.children);
+});
+
+Array.from(hasSubmenu).forEach((submenuWrapper) => {
+  // console.log(submenuWrapper.children);
+  // if (hasSubmenu || hasSubmenu != null) {
+  //   Array.from(hasSubmenu).forEach((submenuWrapper) => {
+  //     submenuWrapper.children[1].classList.add("hidden");
+  //   });
+  // }
 
   submenuWrapper.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -38,18 +44,18 @@ Array.from(hasSubmenu).forEach((submenuWrapper) => {
     // }
     if (!mobileScreenMenu && (hasSubmenu || hasSubmenu != null)) {
       Array.from(hasSubmenu).forEach((submenuWrapper) => {
-        submenuWrapper.children[0].classList.add("hidden");
+        submenuWrapper.children[1].classList.add("hidden");
       });
     }
 
-    if (e.target.children.length > 0) {
+    if (e.target.children.length > 1) {
       console.log(e.target.children.length > 0);
-      if (e.target.children[0].classList.contains("hidden")) {
-        console.log(e.target.children[0]);
-        e.target.children[0].classList.remove("hidden");
+      if (e.target.children[1].classList.contains("hidden")) {
+        // console.log(e.target.children[0]);
+        e.target.children[1].classList.remove("hidden");
       } else {
-        console.log(e.target.children[0]);
-        e.target.children[0].classList.add("hidden");
+        // console.log(e.target.children[0]);
+        e.target.children[1].classList.add("hidden");
       }
     }
   });
@@ -63,8 +69,8 @@ document.addEventListener("click", (e) => {
     let targetElWithDropdown = e.target.classList.contains("has-dropdown");
     if (!targetElWithDropdown) {
       Array.from(hasSubmenu).forEach((submenuWrapper) => {
-        if (!submenuWrapper.children[0].classList.contains("hidden")) {
-          submenuWrapper.children[0].classList.add("hidden");
+        if (!submenuWrapper.children[1].classList.contains("hidden")) {
+          submenuWrapper.children[1].classList.add("hidden");
         }
       });
     } else {
