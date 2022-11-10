@@ -1,0 +1,46 @@
+/*#region  Burger */
+
+.burger-bg {
+    background-color: aqua;  
+    display: block; 
+    padding: 10px 16px 10px 10px; 
+    position: relative;
+    z-index: 1500;
+    cursor: pointer;
+    margin-left: auto;
+}
+.burger-btn span,
+.burger-btn span::before,
+.burger-btn span::after {
+    display: block;
+    width: 32px;
+    height: 2px;
+    background-color: black;
+    margin-left: auto;
+    position: relative;
+    transition: top 0.2s ease-in-out, bottom 0.2s ease-in-out, transform 0.2s ease-in-out, background-color 0.001s ease-in-out;
+    z-index: 10;
+}
+.burger-btn span::before,
+.burger-btn span::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    z-index: 100;    
+}
+.burger-btn span::after {
+    bottom: -8px;
+}
+.burger-btn span.x {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.burger-btn span.x::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+.burger-btn span.x::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+/*#endregion*/

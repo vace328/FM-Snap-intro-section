@@ -8,7 +8,7 @@
 
 /*----------  components
 ------------------------------------------------------------------------------*/
-// @import "components/buttons";
+@import "components/buttons";
 // @import "components/dropdown";
 // @import "components/navigation";
 /*----------  libs
@@ -46,7 +46,6 @@ body {
     // overflow-x: hidden;
     background-color: $neutral_lvl_1;
     min-height: 100vh;
-    background-color: tan;
 }
 img {
     width: 100%;

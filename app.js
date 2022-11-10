@@ -33,7 +33,7 @@ Array.from(hasSubmenu).forEach((submenuWrapper) => {
   // }
 
   submenuWrapper.addEventListener("click", (e) => {
-    e.stopPropagation();
+    // e.stopPropagation();
 
     // if (e.target.classList !== undefined && e.target.children[0].classList.contains("hidden")) {
     //   console.log(e.target.children[0]);
@@ -42,9 +42,12 @@ Array.from(hasSubmenu).forEach((submenuWrapper) => {
     //   console.log(e.target.children[0]);
     //   e.target.children[0].classList.add("hidden");
     // }
+
+
     if (!mobileScreenMenu && (hasSubmenu || hasSubmenu != null)) {
       Array.from(hasSubmenu).forEach((submenuWrapper) => {
         submenuWrapper.children[1].classList.add("hidden");
+        submenuWrapper.children[0].classList.remove("arrow-flip");
       });
     }
 
@@ -53,9 +56,11 @@ Array.from(hasSubmenu).forEach((submenuWrapper) => {
       if (e.target.children[1].classList.contains("hidden")) {
         // console.log(e.target.children[0]);
         e.target.children[1].classList.remove("hidden");
+        e.target.children[0].classList.add("arrow-flip");
       } else {
         // console.log(e.target.children[0]);
         e.target.children[1].classList.add("hidden");
+        e.target.children[0].classList.remove("arrow-flip");
       }
     }
   });
@@ -71,6 +76,7 @@ document.addEventListener("click", (e) => {
       Array.from(hasSubmenu).forEach((submenuWrapper) => {
         if (!submenuWrapper.children[1].classList.contains("hidden")) {
           submenuWrapper.children[1].classList.add("hidden");
+          submenuWrapper.children[0].classList.remove("arrow-flip");
         }
       });
     } else {
