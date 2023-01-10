@@ -44,3 +44,18 @@
     bottom: 0;
 }
 /*#endregion*/
+
+.btn {
+    border: 2px solid $neutral_lvl_3;
+    background-color: $neutral_lvl_3;
+    padding: 18px 29px 17px 30px;
+    border-radius: 16px;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    // line-height: 28px;
+    letter-spacing: -0.05em;
+    color: $neutral_lvl_1;
+    // color: red;
+}

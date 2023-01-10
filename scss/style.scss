@@ -50,3 +50,46 @@ body {
 img {
     width: 100%;
 }
+
+@media only screen and (min-width: 800px) {
+    main {
+        padding: 0 130px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+    .section-text {
+        padding-left: 34px;
+        padding-top: 102px;
+        // border: 1px solid red;
+        h2 {
+            margin-bottom: 46px;
+            max-width: 525px;
+        }
+        p {
+            max-width: 430px;
+            font-size: 19px;
+            line-height: 28px;
+            letter-spacing: -0.025em;
+            margin-bottom: 50px;
+        }
+        .btn-action {
+            margin-bottom: 108px;
+        }
+    }
+    .section-img {
+        // border: 1px solid blue;
+        width: 480px;
+        background: url("/images/image-hero-desktop.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .ref-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        div {
+            margin-right: 40px;
+        }
+    }
+}
