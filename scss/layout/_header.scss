@@ -3,10 +3,13 @@ header {
     padding-top: $header_top_padding;
     display: flex;
     flex-direction: row;
+    margin-bottom: 22px;
 }
 .img-wrapper--logo {
     margin-left: 16px;
-    width: 116px;
+    // padding-top: 14px;
+    // width: 116px;
+    width: 86px;
  }
 nav {
     // background-color: violet;
@@ -119,12 +122,18 @@ li {
     li {
         margin-bottom: 16px;
     }
+    li a:hover {
+        color: $neutral_lvl_3;
+    }
     li:nth-of-type(2) {
         border: 2px solid $neutral_lvl_2;
         width: 196px;
         margin: 0 auto;
         padding: 12px 0;
         border-radius: 14px;
+    }
+    li:nth-of-type(2):hover {
+        border: 2px solid $neutral_lvl_3;
     }
 }
 
@@ -136,7 +145,7 @@ li {
         margin-bottom: 56px;      
     }
     .img-wrapper--logo {
-        padding-top: 9px;
+        padding-top: 11px;
         margin-left: 40px;
         img {
             width: 84px;
@@ -167,6 +176,7 @@ li {
         
         ul {
             padding-left: 42px;
+            padding-left: 62px;
             // padding-top: 2px;
         }
         li {
@@ -177,6 +187,9 @@ li {
             line-height: 15px;
             letter-spacing: -0.03em;
             margin-bottom: 0;
+        }
+        li:hover {
+            color: $neutral_lvl_3;
         }
         ul li:not(.dropdown li){
             display: inline-block;

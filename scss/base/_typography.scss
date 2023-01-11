@@ -4,13 +4,29 @@ p, a, li, h2 {
     color: $neutral_lvl_3;
     font-weight: 500;
 }
-h2 {
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 82px;
-    letter-spacing: -0.015em;
-}
-p {
+li {
     color: $neutral_lvl_2;
 }
 
+h2 {
+    font-weight: 700;    
+    letter-spacing: -0.015em;   
+    font-size: 36px;
+    line-height: 37px;  
+    text-align: center;  
+}
+p {
+    color: $neutral_lvl_2;    
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 900px) {
+    h2 {
+        font-size: 80px;
+        line-height: 82px;
+        text-align: left;
+    }
+}
