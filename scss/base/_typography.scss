@@ -7,7 +7,6 @@ p, a, li, h2 {
 li {
     color: $neutral_lvl_2;
 }
-
 h2 {
     font-weight: 700;    
     letter-spacing: -0.015em;   
@@ -21,8 +20,6 @@ p {
     line-height: 26px;
     text-align: center;
 }
-
-
 @media only screen and (min-width: 900px) {
     h2 {
         font-size: 80px;

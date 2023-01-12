@@ -9,21 +9,14 @@
 /*----------  components
 ------------------------------------------------------------------------------*/
 @import "components/buttons";
-// @import "components/dropdown";
-// @import "components/navigation";
-/*----------  libs
-------------------------------------------------------------------------------*/
 
 /*----------  layout
 ------------------------------------------------------------------------------*/
-@import "layout/header"; 
-@import "layout/footer";     
+@import "layout/header";
   
- 
 * {
     box-sizing: border-box;
 }
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -34,23 +27,19 @@
     clip: rect(0,0,0,0,0);
     border: 0;
 }
-
 .hidden {
     display: none;
 }
 a {
     text-decoration: none;
 }
-
 body {
-    // overflow-x: hidden;
     background-color: $neutral_lvl_1;
     min-height: 100vh;
 }
 img {
     width: 100%;
 }
-
 main {
     display: flex;
     flex-direction: column;
@@ -111,7 +100,6 @@ main {
         padding-right: 100px;
     }
 }
-
 @media only screen and (min-width: 900px) {
     main {
         padding: 0 80px;        
@@ -124,7 +112,6 @@ main {
         padding-right: 10px;
         order: 1;
         text-align: left;
-        // border: 1px solid red;
         h2 {
             margin-bottom: 46px;
             max-width: 525px;
@@ -142,7 +129,6 @@ main {
         }
     }
     .section-img {
-        // border: 1px solid blue;
         order: 2;
         width: 480px;
         background: url("../images/image-hero-desktop.png");
@@ -151,11 +137,8 @@ main {
         height: unset;
         background-position: unset;
         margin-bottom: unset;
-    }
-
-    
+    }    
 }
-
 @media only screen and (min-width: 1200px) {
     main {
         padding: 0 130px;        

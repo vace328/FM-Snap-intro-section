@@ -1,5 +1,4 @@
 /*#region  Burger */
-
 .burger-bg {
     display: block; 
     padding: 10px 16px 10px 10px; 
@@ -53,7 +52,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    // line-height: 24px;
     letter-spacing: -0.015em;
     
     color: $neutral_lvl_1;
@@ -63,15 +61,12 @@
 .btn:hover {
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid $neutral_lvl_2;
-    color: $neutral_lvl_3;
-    
+    color: $neutral_lvl_3;    
 }
 @media only screen and (min-width: 900px) {
     .btn {
         font-size: 19px;
         padding: 16px 28px 16px 28px;
-        // line-height: 28px;
         letter-spacing: -0.05em;
-    }
-    
+    }    
 }
